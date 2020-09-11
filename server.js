@@ -1,26 +1,22 @@
-const http = require('http');
+// Server using Express JS
+const express = require('express');
 
-const server = http.createServer((request, response) => {
-    // TEXT/HTML
-    // response.setHeader('Content-Type', 'text/html');
-    // response.end('<h1>Hello</h1>');
-    // console.log('I hear you!. Thanks for the request');
+const app = express();
 
-    // JSON
-    const user = {
+// get, post, put, delete
+
+app.get('/', (req, res) => {
+    // Automatic Header Content-Type detection
+    // res.send("hello");
+    // res.send("<h1>hello</h1>");
+    res.send({
         name: 'John',
-        hobby: 'Skating'
-    };
-    response.setHeader('Content-Type', 'application/json');
-    // convert to string to send it over to wires
-    // refer to json video for more JSON tutorial
-    response.end(JSON.stringify(user));
-
-
-    // response properties
-    // console.log("Headers", request.headers);
-    // console.log("Method", request.method);
-    // console.log("URL", request.url);
+        hobby: 'Painting'
+    });
 });
 
-server.listen(4000);
+app.get('/profile', (req, res) => {
+    res.send('getting profile');
+});
+
+app.listen(4000);
