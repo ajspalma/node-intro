@@ -77,5 +77,12 @@ Lesson 5 - Express JS
 Lesson 6 - Express Middlewares
     - Middleware - runs first before going through the specific route 
         - app.use((req, res, next) => {})
-     
+
+Lesson 7 - Postman
+    - POST request 
+        - to get the post data from form-data, x-wwww-form-urlencoded, raw (JSON), etc.
+            Body-Parser package is needed
+    - Body-Parser (https://www.npmjs.com/package/body-parser) 
+        - grabs everything it receives like json or forms into something we can use 
+        - to use it, place it to app.use middleware
                 

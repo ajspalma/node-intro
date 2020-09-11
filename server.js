@@ -1,5 +1,6 @@
 // Server using Express JS
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -8,6 +9,12 @@ app.use((req, res, next) => {
     // run next() method to run the next request 
     next();
 });
+
+// Body-Parser for x-wwww-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false}));
+
+// Body-Parser for raw (JSON)
+app.use(bodyParser.json());
 
 // get, post, put, delete
 
@@ -19,6 +26,11 @@ app.get('/', (req, res) => {
         name: 'John',
         hobby: 'Painting'
     });
+});
+
+app.post('/profile', (req, res) => {
+    console.log(req.body); // returns undefined (needs body parser)
+    res.send('Success');
 });
 
 app.get('/profile', (req, res) => {
