@@ -55,10 +55,10 @@ Lesson 3 - Kinds/Types of Modules in Node
         - type -y flag to automatically answer yes in npm package initialization
             example: $ npm init -y
 
-    - Dev-dependencies 
-        - node packages used in development enviroment using the --save-dev flag
-            example: $ npm install nodemon --save-dev
-                - it installs nodemon package under the devDependecies object on package.json
+- Dev-dependencies 
+    - node packages used in development enviroment using the --save-dev flag
+        example: $ npm install nodemon --save-dev
+            - it installs nodemon package under the devDependecies object on package.json
 
     - .bin (folder under node_modules)
         - packages inside here can be accessed and used directly in the terminal and 
@@ -67,5 +67,9 @@ Lesson 3 - Kinds/Types of Modules in Node
                     "script": {
                         "start": "nodemon" // replaced with nodemon
                     }
+
+Lesson 4 - Building a Server
+- Create a server using node built-in http module  
+
      
                 
