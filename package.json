@@ -1,0 +1,24 @@
+{
+  "name": "node-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajspalma/node-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajspalma/node-intro/issues"
+  },
+  "homepage": "https://github.com/ajspalma/node-intro#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

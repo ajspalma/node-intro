@@ -34,5 +34,38 @@ Lesson 2 - Modules
                 module.exports = {
                     largeNumber: largeNumber
                 };
+
+Lesson 3 - Kinds/Types of Modules in Node
+- Built-in Modules (comes in Node by default)
+    Some of the most used node modules are:
+    - fs (File System module (read or write in file system)) 
+        - const fs = require('fs');
+    - http (module to create server)
+        - const http = require('http');
+- Came from NPM 
+    - Node packages that came from the NPM repository
+    example: 
+        - nodemon - https://www.npmjs.com/package/nodemon
+            - is a tool that helps develop node.js based applications by 
+            automatically restarting the node application when file changes 
+            in the directory are detected.
+
+    - NPM init
+        - run npm init to create a package.json file if not exist to install other node packages    
+        - type -y flag to automatically answer yes in npm package initialization
+            example: $ npm init -y
+
+    - Dev-dependencies 
+        - node packages used in development enviroment using the --save-dev flag
+            example: $ npm install nodemon --save-dev
+                - it installs nodemon package under the devDependecies object on package.json
+
+    - .bin (folder under node_modules)
+        - packages inside here can be accessed and used directly in the terminal and 
+            can be used in the commands inside scripts object in package.json
+                example: 
+                    "script": {
+                        "start": "nodemon" // replaced with nodemon
+                    }
      
                 
