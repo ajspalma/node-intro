@@ -78,7 +78,7 @@ Lesson 6 - Express Middlewares
     - Middleware - runs first before going through the specific route 
         - app.use((req, res, next) => {})
 
-Lesson 7 - Postman
+Lesson 7 - Postman and Body-Parser
     - POST request 
         - to get the post data from form-data, x-wwww-form-urlencoded, raw (JSON), etc.
             Body-Parser package is needed
@@ -86,3 +86,28 @@ Lesson 7 - Postman
         - grabs everything it receives like json or forms into something we can use 
         - to use it, place it to app.use middleware
                 
+Lesson 8 - RESTful API (https://restfulapi.net/)
+    - REST is acronym for REpresentational State Transfer. It is architectural style 
+    for distributed hypermedia systems and was first presented by Roy Fielding in 2000 
+    in his famous dissertation.
+    - GET, POST, PUT, DELETE request
+    - RESTful - something that follows the rules and everybody agrees on so that
+        we have compatibilty between different systems
+    - is an Architectural Style and is an approach to communications
+        - uses GET to receive a resource
+        - PUT to change the state or update a resource
+        - POST creates a resource
+        - DELETE to remove a resource
+    - way to define our server so that it specifies what it can provide and how to use it 
+    - http request is the VERB and everything after the slash is the NOUN
+    - Stateless - meaning calls can be made independently of one another and each
+        call contains all the data necessary to complete itslef successfully
+
+
+- Express Request and Reponse 
+    req.query // Query Strings
+    req.body // Body 
+    req.headers // Headers
+    req.params // URL Parameters ('/:id')
+    
+    res.status(200).send('getting root'); // (status code, ex. 404 not found, 200 OK)
