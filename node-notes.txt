@@ -13,8 +13,26 @@ can be used in robotics and other fields
     - process (means what the computer is doing)
         - process.exit() - exits node
 
+Lesson 1 
+
 Running script.js in Node JS
 
 $ node script.js
     - runs/evaluate the script.js (top to bottom)
     - exits with process.exit()
+
+Lesson 2 - Modules
+    - 'import' statement will not work without module bundler like webpack, etc
+    - module is a global object
+
+    Common JS way
+        - 'require' is used instead of 'import'
+            example.
+                const largeNumber = require('./script2.js');
+        - 'module.exports' instead of export default
+            example 
+                module.exports = {
+                    largeNumber: largeNumber
+                };
+     
+                
