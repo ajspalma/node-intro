@@ -1,0 +1,20 @@
+Node.JS (Server)
+
+can be used in robotics and other fields 
+-  http://johnny-five.io/ (robotics)
+
+- runs with V8 engine
+- node -v -> version
+- node comes with something called GLOBAL (object)
+- node comes with its own methods and properties that we use
+- node can be use with/in anything (if not in the browser) without browser specific things
+    - cannot use window/document object in the terminal (only for browsers)
+- Some of Global/global object 
+    - process (means what the computer is doing)
+        - process.exit() - exits node
+
+Running script.js in Node JS
+
+$ node script.js
+    - runs/evaluate the script.js (top to bottom)
+    - exits with process.exit()
