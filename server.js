@@ -3,6 +3,12 @@ const express = require('express');
 
 const app = express();
 
+app.use((req, res, next) => {
+    console.log('Hello');
+    // run next() method to run the next request 
+    next();
+});
+
 // get, post, put, delete
 
 app.get('/', (req, res) => {

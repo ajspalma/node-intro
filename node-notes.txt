@@ -73,6 +73,9 @@ Lesson 4 - Building a Server
 
 Lesson 5 - Express JS 
     - Creating a server with Express JS
-    
+
+Lesson 6 - Express Middlewares
+    - Middleware - runs first before going through the specific route 
+        - app.use((req, res, next) => {})
      
                 
